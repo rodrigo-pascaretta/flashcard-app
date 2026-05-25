@@ -10,7 +10,11 @@ A modern flashcard application built with **Angular** to help you study JavaScri
 
 ## 📸 Screenshots
 
+1. Flashcard Before Answer (Show Answer)
 ![Flashcard Before Answer](image.png)
+
+2. Flashcard After Answer (Hide Answer)
+![Flashcard After Answer](image-1.png)
 
 ---
 
