@@ -1,0 +1,8 @@
+ <div class="progress-header">
+      <span>Flash Cards</span>
+      <span>{{ current() }} of {{ total() }}</span>
+    </div>
+    <div class="progress-track">
+      <div class="progress-fill" [style.width.%]="percent()"></div>
+      <span class="progress-label">{{ percent() }}%</span>
+    </div>

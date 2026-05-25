@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>⚡ Flash Cards</h1>
+  <app-progress-bar
+    [current]="currentIndex() + 1"
+    [total]="total"
+    [percent]="percent()"
+  />
+<app-flashcard
+  [card]="currentCard()"
+  [showAnswer]="showAnswer()"
+  [isFirst]="currentIndex() === 0"
+  [isLast]="currentIndex() === total - 1"
+  (prev)="navigate(-1)"
+  (next)="navigate(1)"
+  (toggleAnswer)="showAnswer.set(!showAnswer())"
+/>
+</div>

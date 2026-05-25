@@ -1,0 +1,18 @@
+<div class="card-scene">
+  <div class="card" [class.flipped]="showAnswer()">
+    <div class="card-face card-front">
+      <p>{{ card().question }}</p>
+    </div>
+    <div class="card-face card-back">
+      <p>{{ card().answer }}</p>
+    </div>
+  </div>
+</div>
+
+<div class="card-footer">
+  <button (click)="prev.emit()" [disabled]="isFirst()">‹ Previous</button>
+  <button class="btn-flip" (click)="toggleAnswer.emit()">
+    {{ showAnswer() ? 'Hide Answer' : 'Show Answer' }}
+  </button>
+  <button (click)="next.emit()" [disabled]="isLast()">Next ›</button>
+</div>

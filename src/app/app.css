@@ -1,0 +1,15 @@
+.container {
+  width: 100%;
+  max-width: 520px;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #a78bfa;
+  letter-spacing: 0.5px;
+}
